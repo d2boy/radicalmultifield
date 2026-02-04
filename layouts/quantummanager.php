@@ -32,10 +32,6 @@ HTMLHelper::_('script', 'plg_fields_radicalmultifield/modal.js', [
 	'relative' => true
 ]);
 
-?>
-
-<?php
-
 try
 {
 
@@ -78,15 +74,6 @@ try
 			'position' => 'bottom'
 		],
 	];
-
-
-	if ((int) QuantummanagerHelper::getParamsComponentValue('unsplash', '1'))
-	{
-		$fields['quantumunsplash'] = [
-			'label'    => '',
-			'position' => 'bottom'
-		];
-	}
 
 	$actions = QuantummanagerHelper::getActions();
 	if (!$actions->get('core.create'))
